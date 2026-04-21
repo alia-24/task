@@ -1,356 +1,359 @@
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Tajawal', sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    min-height: 100vh;
-    padding: 40px 20px;
+  font-family: "Tajawal", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  padding: 40px 20px;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* العنوان */
 h1 {
-    text-align: center;
-    color: white;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
-/* بطاقة النموذج */
-.form-card, .comments-list {
-    background: white;
-    border-radius: 24px;
-    padding: 30px;
-    margin-bottom: 35px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+.form-card,
+.comments-list {
+  background: white;
+  border-radius: 30px;
+  padding: 30px;
+  margin-bottom: 35px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .form-title {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    color: #2d3748;
-    border-right: 4px solid #667eea;
-    padding-right: 15px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #2d3748;
+  border-right: 4px solid #667eea;
+  padding-right: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .form-title i {
-    color: #667eea;
+  color: #667eea;
 }
 
-/* الحقول */
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #2d3748;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 label i {
-    color: #667eea;
+  color: #667eea;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e2e8f0;
-    border-radius: 12px;
-    font-size: 14px;
-    font-family: inherit;
-    background: #f8fafc;
+input,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #f8fafc;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #667eea;
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #667eea;
 }
 
 textarea {
-    min-height: 90px;
-    resize: vertical;
+  min-height: 90px;
+  resize: vertical;
 }
 
-/* الأزرار */
 .button-group {
-    display: flex;
-    gap: 12px;
-    margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 button {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: 0.2s;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
 }
 
 button:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .cancel-btn {
-    background: linear-gradient(135deg, #868f96, #596164);
+  background: linear-gradient(135deg, #868f96, #596164);
 }
 
-/* رأس قائمة التعليقات */
 .comments-header {
-    font-size: 1.3rem;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid #e2e8f0;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
 }
 
 .comments-header i {
-    color: #667eea;
+  color: #667eea;
 }
 
-.badge {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    padding: 4px 12px;
-    border-radius: 30px;
-    font-size: 0.8rem;
-    color: white;
-    margin-right: auto;
+.spancont {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  color: white;
+  margin-right: auto;
 }
 
-/* شبكة التعليقات */
 .comments-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
 }
 
-/* بطاقة التعليق */
 .comment-item {
-    background: white;
-    border-radius: 18px;
-    padding: 20px;
-    border: 1px solid #e2e8f0;
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden;
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
 .comment-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .comment-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .comment-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .comment-avatar {
-    width: 45px;
-    height: 45px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .comment-info {
-    flex: 1;
+  flex: 1;
 }
 
 .comment-name {
-    font-weight: bold;
-    color: #2d3748;
+  font-weight: bold;
+  color: #2d3748;
 }
 
 .comment-email {
-    font-size: 0.7rem;
-    color: #718096;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  font-size: 0.7rem;
+  color: #718096;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .comment-body {
-    color: #4a5568;
-    line-height: 1.6;
-    margin: 12px 0;
-    padding: 12px;
-    background: #f7fafc;
-    border-radius: 12px;
-    font-size: 0.85rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 12px 0;
+  padding: 12px;
+  background: #f7fafc;
+  border-radius: 12px;
+  font-size: 0.85rem;
 }
 
 .comment-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .edit-btn {
-    background: #48bb78;
-    padding: 6px 15px;
-    font-size: 12px;
-    flex: 1;
-    justify-content: center;
+  background: #48bb78;
+  padding: 6px 15px;
+  font-size: 12px;
+  flex: 1;
+  justify-content: center;
 }
 
 .delete-btn {
-    background: #f56565;
-    padding: 6px 15px;
-    font-size: 12px;
-    flex: 1;
-    justify-content: center;
+  background: #f56565;
+  padding: 6px 15px;
+  font-size: 12px;
+  flex: 1;
+  justify-content: center;
 }
 
-/* حالات خاصة */
-.loading, .empty {
-    text-align: center;
-    padding: 50px;
-    color: #718096;
+.loadingclass,
+.empty {
+  text-align: center;
+  padding: 50px;
+  color: #718096;
 }
 
-.spinner {
-    width: 45px;
-    height: 45px;
-    border: 4px solid #e2e8f0;
-    border-top: 4px solid #667eea;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto 15px;
+.spinnercont {
+  width: 45px;
+  height: 45px;
+  border: 4px solid #e2e8f0;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-/* رسائل الإشعارات */
 .toast-message {
-    position: fixed;
-    top: 25px;
-    right: 25px;
-    padding: 12px 22px;
-    border-radius: 50px;
-    font-weight: bold;
-    z-index: 1000;
-    animation: slideIn 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-weight: bold;
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .toast-success {
-    background: #48bb78;
-    color: white;
+  background: #48bb78;
+  color: white;
 }
 
 .toast-error {
-    background: #f56565;
-    color: white;
+  background: #f56565;
+  color: white;
 }
 
 @keyframes slideIn {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-/* أنيميشن بسيط */
 .comment-item {
-    animation: fadeInUp 0.3s ease backwards;
+  animation: fadeInUp 0.3s ease backwards;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* للجوال */
 @media (max-width: 768px) {
-    body {
-        padding: 20px 15px;
-    }
+  body {
+    padding: 20px 15px;
+  }
 
-    h1 {
-        font-size: 1.8rem;
-    }
+  h1 {
+    font-size: 1.8rem;
+  }
 
-    .form-card, .comments-list {
-        padding: 20px;
-    }
+  .form-card,
+  .comments-list {
+    padding: 20px;
+  }
 
-    .comments-grid {
-        grid-template-columns: 1fr;
-    }
+  .comments-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .button-group {
-        flex-direction: column;
-    }
+  .button-group {
+    flex-direction: column;
+  }
 
-    button {
-        width: 100%;
-        justify-content: center;
-    }
+  button {
+    width: 100%;
+    justify-content: center;
+  }
 
-    .toast-message {
-        top: 15px;
-        right: 15px;
-        left: 15px;
-        font-size: 14px;
-    }
+  .toast-message {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+    font-size: 14px;
+  }
+}
+
+#commentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
