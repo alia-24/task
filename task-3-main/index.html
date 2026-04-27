@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rawan Alsaeedi | Frontend Developer & UI Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><span class="accent">Rawan</span> Alsaeedi</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-badge">✨ Welcome to my creative space</div>
+          <h1>
+            Frontend <span class="accent">Developer</span><br />
+            & UI Designer
+          </h1>
+          <p class="hero-desc">
+            I craft beautiful digital experiences using React.js<br />
+            combining innovation with user-centered design.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-fill">
+              <i class="fas fa-paper-plane"></i> Hire Me
+            </button>
+            <button class="btn-outline">
+              <i class="fas fa-download"></i> Download CV
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <h3>2+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h3>2+</h3>
+              <p>Projects Done</p>
+            </div>
+            <div class="stat">
+              <h3>8+</h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="img/Group 2346.png" alt="Rawan Alsaeedi" />
+            <div class="floating-card card-1">
+              <i class="fab fa-react"></i>
+              <span>React.js</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-code"></i>
+              <span>Frontend Dev</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="about-image">
+          <div class="about-img-wrapper">
+            <img src="img/Group 2372.png" alt="About Rawan" />
+            <div class="experience-badge">
+              <span>2+</span>
+              <p>Years of<br />Excellence</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-tag">About Me</div>
+          <h2>
+            I'm <span class="accent">Rawan Alsaeedi</span>, a passionate<br />
+            Frontend Developer
+          </h2>
+          <p class="about-text">
+            I'm a passionate Frontend Developer and UI Designer with 2+ years of
+            experience specializing in React.js. I love creating beautiful,
+            responsive, and user-friendly web applications that solve real
+            problems. Based in Daraa, Syria, I'm committed to continuous
+            learning and delivering professional, high-quality work that makes a
+            difference. I take pride in my attention to detail and my ability to
+            bring creative ideas to life through code.
+          </p>
+          <div class="skills">
+            <div class="skill-tag">React.js</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">HTML5/CSS3</div>
+            <div class="skill-tag">UI Design</div>
+            <div class="skill-tag">Responsive Design</div>
+            <div class="skill-tag">Frontend Development</div>
+            <div class="skill-tag">UX Design</div>
+            <div class="skill-tag">Figma</div>
+          </div>
+          <div class="personal-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i> Daraa, Syria
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i> alsaeedi5@gmail.com
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i> +963 995 387 701
+            </div>
+          </div>
+          <a href="#" class="read-more"
+            >View Portfolio <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- Works Section -->
+      <div class="works-wrapper">
+        <section id="works" class="works">
+          <div class="section-tag">Portfolio</div>
+          <h2>My Recent <span class="accent">Works</span></h2>
+          <p class="works-desc">
+            Here are some of my favorite projects I've worked on
+          </p>
+
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ui">UI Design</button>
+            <button class="filter-btn" data-filter="web">
+              Web Development
+            </button>
+          </div>
+
+          <div class="work-grid">
+            <div class="work-card" data-category="web">
+              <div class="work-img">
+                <img src="img/Frame 10.png" alt="Bank Project" />
+                <div class="work-overlay">
+                  <div class="work-info">
+                    <h3>Bank of Daraa</h3>
+                    <p>Web Development</p>
+                    <a href="#" class="work-link"
+                      ><i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-card" data-category="web">
+              <div class="work-img">
+                <img src="img/Group 33.png" alt="Student Portal Project" />
+                <div class="work-overlay">
+                  <div class="work-info">
+                    <h3>Smart Student Portal</h3>
+                    <p>Web Development</p>
+                    <a href="#" class="work-link"
+                      ><i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-card" data-category="ui">
+              <div class="work-img">
+                <img src="img/Group 1.png" alt="UI Design Project" />
+                <div class="work-overlay">
+                  <div class="work-info">
+                    <h3>Modern UI Design</h3>
+                    <p>UI/UX Design</p>
+                    <a href="#" class="work-link"
+                      ><i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="section-tag">Get in Touch</div>
+            <h2>
+              Got a project<br />
+              <span class="accent">in mind?</span>
+            </h2>
+            <p>Let's work together and create something amazing!</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p>alsaeedi5@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <strong>Phone</strong>
+                  <p>+963 995 387 701</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Location</strong>
+                  <p>Daraa, Syria</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="input-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="John Doe" required />
+              </div>
+              <div class="input-group">
+                <label>Your Email</label>
+                <input type="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="input-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Project idea..." required />
+            </div>
+            <div class="input-group">
+              <label>Your Message</label>
+              <textarea
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-fill">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3><span class="accent">Rawan</span> Alsaeedi</h3>
+          <p>Frontend Developer & UI Designer</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-links">
+            <a
+              href="https://facebook.com/yourusername"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com/yourusername"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://t.me/yourusername"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Rawan Alsaeedi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
